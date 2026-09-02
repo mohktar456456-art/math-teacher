@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mohktar456456-art.github.io/math-teacher/sitemap.xml
