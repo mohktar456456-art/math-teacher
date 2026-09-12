@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
+```
+<url>
     <loc>https://mohktar456456-art.github.io/math-teacher/</loc>
-  </url>
+</url>
 
-  <url>
+<url>
     <loc>https://mohktar456456-art.github.io/math-teacher/secondary.html</loc>
-  </url>
+</url>
+
+<url>
+    <loc>https://mohktar456456-art.github.io/math-teacher/grade12.html</loc>
+</url>
+```
 
 </urlset>
