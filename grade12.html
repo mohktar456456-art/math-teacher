@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
@@ -49,6 +49,14 @@
         "@graph": [
 
             {
+                "@type": "WebSite",
+                "@id": "https://mohktar456456-art.github.io/math-teacher/#website",
+                "url": "https://mohktar456456-art.github.io/math-teacher/",
+                "name": "مدرس رياضيات في الكويت",
+                "inLanguage": "ar"
+            },
+
+            {
                 "@type": "WebPage",
                 "@id": "https://mohktar456456-art.github.io/math-teacher/grade12.html#webpage",
                 "url": "https://mohktar456456-art.github.io/math-teacher/grade12.html",
@@ -56,9 +64,7 @@
                 "description": "صفحة متخصصة في شرح ومراجعة رياضيات الصف الثاني عشر وثاني عشر علمي في الكويت.",
                 "inLanguage": "ar",
                 "isPartOf": {
-                    "@type": "WebSite",
-                    "name": "مدرس رياضيات في الكويت",
-                    "url": "https://mohktar456456-art.github.io/math-teacher/"
+                    "@id": "https://mohktar456456-art.github.io/math-teacher/#website"
                 },
                 "about": {
                     "@type": "Thing",
@@ -84,6 +90,7 @@
 
             {
                 "@type": "BreadcrumbList",
+                "@id": "https://mohktar456456-art.github.io/math-teacher/grade12.html#breadcrumb",
                 "itemListElement": [
 
                     {
@@ -108,39 +115,998 @@
                     }
 
                 ]
-            },
+            }
 
-            {
-                "@type": "FAQPage",
-                "mainEntity": [
+        ]
+    }
+    </script>
 
-                    {
-                        "@type": "Question",
-                        "name": "هل يوجد مدرس رياضيات ثاني عشر في الكويت؟",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "نعم، تشمل الدروس شرح موضوعات الرياضيات للصف الثاني عشر وحل المسائل والمراجعة والتدريب على الاختبارات."
-                        }
-                    },
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-                    {
-                        "@type": "Question",
-                        "name": "هل يوجد شرح رياضيات ثاني عشر علمي؟",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "نعم، يمكن شرح ومراجعة رياضيات ثاني عشر علمي مع التدريب على المسائل وتوضيح خطوات الحل."
-                        }
-                    },
+        html {
+            scroll-behavior: smooth;
+        }
 
-                    {
-                        "@type": "Question",
-                        "name": "هل توجد دروس رياضيات ثاني عشر أونلاين؟",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "نعم، يمكن تقديم دروس رياضيات الصف الثاني عشر أونلاين للطلاب داخل الكويت وخارجها."
-                        }
-                    },
+        body {
+            margin: 0;
+            font-family: Arial, Tahoma, sans-serif;
+            line-height: 1.8;
+            background: #f7f9fc;
+            color: #222;
+        }
 
-                    {
-                        "@type": "Question",
-```
+        a {
+            color: inherit;
+        }
+
+        .container {
+            width: min(1100px, 92%);
+            margin: auto;
+        }
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav {
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo {
+            text-decoration: none;
+            font-size: 21px;
+            font-weight: bold;
+            color: #123b6d;
+            white-space: nowrap;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 15px;
+            color: #333;
+        }
+
+        nav a:hover {
+            color: #0b63ce;
+        }
+
+        .hero {
+            padding: 75px 0;
+            background: linear-gradient(135deg, #eef6ff, #ffffff);
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        h1 {
+            margin: 0 0 20px;
+            font-size: clamp(32px, 5vw, 52px);
+            line-height: 1.3;
+            color: #123b6d;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #123b6d;
+            font-size: 30px;
+        }
+
+        h3 {
+            color: #164d86;
+        }
+
+        .hero p {
+            font-size: 19px;
+            color: #444;
+            margin-bottom: 28px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #0b63ce;
+        }
+
+        .btn-primary {
+            background: #0b63ce;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #0b63ce;
+        }
+
+        section {
+            padding: 65px 0;
+        }
+
+        .section-intro {
+            max-width: 800px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        .topics {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .topic {
+            background: white;
+            padding: 22px;
+            border-radius: 10px;
+            border-right: 4px solid #0b63ce;
+        }
+
+        .topic h3 {
+            margin-top: 0;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .step {
+            background: white;
+            padding: 22px;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .step-number {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: #0b63ce;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .highlight {
+            background: #123b6d;
+            color: white;
+            border-radius: 14px;
+            padding: 40px;
+        }
+
+        .highlight h2 {
+            color: white;
+        }
+
+        .highlight a {
+            color: white;
+        }
+
+        .faq-item {
+            background: white;
+            padding: 22px;
+            margin-bottom: 14px;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .faq-item h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        .contact {
+            background: #eef6ff;
+        }
+
+        footer {
+            background: #102a43;
+            color: white;
+            padding: 35px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 12px;
+        }
+
+        @media (max-width: 800px) {
+            .nav {
+                flex-direction: column;
+                padding: 15px 0;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .cards,
+            .topics,
+            .steps {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 55px 0;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+            section {
+                padding: 45px 0;
+            }
+
+            .highlight {
+                padding: 28px 22px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav">
+
+            <a class="logo"
+                href="https://mohktar456456-art.github.io/math-teacher/">
+                مدرس رياضيات في الكويت
+            </a>
+
+            <nav aria-label="التنقل الرئيسي">
+
+                <a href="https://mohktar456456-art.github.io/math-teacher/">
+                    الرئيسية
+                </a>
+
+                <a href="https://mohktar456456-art.github.io/math-teacher/#services">
+                    الخدمات
+                </a>
+
+                <a href="https://mohktar456456-art.github.io/math-teacher/#levels">
+                    المراحل
+                </a>
+
+                <a href="https://mohktar456456-art.github.io/math-teacher/secondary.html">
+                    المرحلة الثانوية
+                </a>
+
+                <a href="https://mohktar456456-art.github.io/math-teacher/grade12.html">
+                    ثاني عشر
+                </a>
+
+                <a href="#faq">
+                    الأسئلة
+                </a>
+
+                <a href="#contact">
+                    التواصل
+                </a>
+
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Hero -->
+    <main>
+
+        <section class="hero">
+
+            <div class="container hero-content">
+
+                <h1>
+                    مدرس رياضيات ثاني عشر في الكويت
+                </h1>
+
+                <p>
+                    شرح ومراجعة رياضيات الصف الثاني عشر وثاني عشر علمي
+                    بطريقة مبسطة تساعد الطالب على فهم الأفكار والقوانين
+                    والتعامل مع المسائل بثقة، مع إمكانية الدراسة أونلاين.
+                </p>
+
+                <div class="buttons">
+
+                    <a class="btn btn-primary"
+                        href="https://wa.me/96560391481">
+                        التواصل عبر واتساب
+                    </a>
+
+                    <a class="btn btn-secondary"
+                        href="tel:+96560391481">
+                        الاتصال
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Intro -->
+        <section>
+
+            <div class="container">
+
+                <h2>
+                    شرح رياضيات الصف الثاني عشر في الكويت
+                </h2>
+
+                <p class="section-intro">
+                    الهدف من الدروس هو مساعدة الطالب على فهم طريقة التفكير
+                    في المسألة، وليس الاعتماد على حفظ خطوات الحل فقط.
+                    يتم شرح القاعدة ثم تطبيقها على أمثلة متنوعة، مع التدريب
+                    على الأسئلة التي تحتاج إلى أكثر من خطوة للوصول إلى الإجابة.
+                </p>
+
+                <p>
+                    يمكن أن تشمل الدروس شرح أجزاء المنهج، حل تدريبات ومسائل،
+                    مراجعة قبل الاختبارات، ومعالجة النقاط التي يجد الطالب
+                    صعوبة في فهمها.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- What student gets -->
+        <section>
+
+            <div class="container">
+
+                <h2>
+                    ماذا يحصل عليه الطالب؟
+                </h2>
+
+                <div class="cards">
+
+                    <div class="card">
+
+                        <h3>فهم القوانين</h3>
+
+                        <p>
+                            توضيح معنى القانون ومتى يستخدم، مع ربطه
+                            بنوع السؤال المطلوب حله.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <h3>حل المسائل</h3>
+
+                        <p>
+                            التدريب على ترتيب خطوات الحل والتعامل
+                            مع المسائل المختلفة بطريقة منظمة.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <h3>المراجعة</h3>
+
+                        <p>
+                            مراجعة الموضوعات المهمة وتحديد النقاط
+                            التي تحتاج إلى تدريب إضافي.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Scientific -->
+        <section>
+
+            <div class="container">
+
+                <h2>
+                    رياضيات ثاني عشر علمي
+                </h2>
+
+                <p class="section-intro">
+                    يمكن تخصيص الدروس لطلاب ثاني عشر علمي حسب مستوى الطالب
+                    والموضوعات التي يحتاج إلى مراجعتها، سواء كان الهدف
+                    هو تقوية الأساسيات أو التدريب المكثف قبل الاختبارات.
+                </p>
+
+                <div class="cards">
+
+                    <div class="card">
+
+                        <h3>شرح الدرس</h3>
+
+                        <p>
+                            البدء من الفكرة الأساسية ثم الانتقال تدريجيًا
+                            إلى الأمثلة والتطبيقات.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <h3>تطبيقات متنوعة</h3>
+
+                        <p>
+                            حل أكثر من نوع من الأسئلة حتى يستطيع الطالب
+                            اختيار الطريقة المناسبة للحل.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <h3>التدريب على الاختبارات</h3>
+
+                        <p>
+                            التدريب على تنظيم الوقت وقراءة السؤال
+                            وتجنب الأخطاء الشائعة أثناء الحل.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Topics -->
+        <section>
+
+            <div class="container">
+
+                <h2>
+                    موضوعات يمكن مراجعتها
+                </h2>
+
+                <p class="section-intro">
+                    تختلف احتياجات الطلاب من طالب لآخر، لذلك يمكن التركيز
+                    على الموضوعات التي تحتاج إلى شرح أو تدريب إضافي.
+                </p>
+
+                <div class="topics">
+
+                    <div class="topic">
+
+                        <h3>
+                            الجبر والمعادلات
+                        </h3>
+
+                        <p>
+                            مراجعة خطوات التعامل مع المعادلات والتعبيرات
+                            الجبرية وتطبيق القواعد بصورة صحيحة.
+                        </p>
+
+                    </div>
+
+
+                    <div class="topic">
+
+                        <h3>
+                            الدوال
+                        </h3>
+
+                        <p>
+                            فهم الدوال وطرق التعامل معها وتطبيق المفاهيم
+                            على الأسئلة المختلفة.
+                        </p>
+
+                    </div>
+
+
+                    <div class="topic">
+
+                        <h3>
+                            الهندسة
+                        </h3>
+
+                        <p>
+                            فهم العلاقات الهندسية والقوانين واستخدامها
+                            للوصول إلى الحل بطريقة منظمة.
+                        </p>
+
+                    </div>
+
+
+                    <div class="topic">
+
+                        <h3>
+                            التفاضل والتكامل
+                        </h3>
+
+                        <p>
+                            شرح الأفكار الأساسية والتدريب على تطبيق
+                            القواعد في المسائل المختلفة.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Teaching method -->
+        <section>
+
+            <div class="container">
+
+                <h2>
+                    طريقة شرح الرياضيات
+                </h2>
+
+                <div class="steps">
+
+                    <div class="step">
+
+                        <div class="step-number">1</div>
+
+                        <h3>
+                            فهم السؤال
+                        </h3>
+
+                        <p>
+                            تحديد المطلوب والمعطيات قبل البدء في الحل.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step">
+
+                        <div class="step-number">2</div>
+
+                        <h3>
+                            اختيار القانون
+                        </h3>
+
+                        <p>
+                            تحديد القاعدة أو الطريقة المناسبة لنوع المسألة.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step">
+
+                        <div class="step-number">3</div>
+
+                        <h3>
+                            التطبيق
+                        </h3>
+
+                        <p>
+                            تطبيق القانون خطوة بخطوة مع توضيح سبب كل خطوة.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step">
+
+                        <div class="step-number">4</div>
+
+                        <h3>
+                            التدريب
+                        </h3>
+
+                        <p>
+                            حل مسائل إضافية للتأكد من قدرة الطالب
+                            على تطبيق الفكرة بنفسه.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Online -->
+        <section>
+
+            <div class="container">
+
+                <div class="highlight">
+
+                    <h2>
+                        دروس رياضيات ثاني عشر أونلاين
+                    </h2>
+
+                    <p>
+                        يمكن الدراسة أونلاين من خلال شرح مباشر ومشاركة
+                        المسائل أثناء الدرس، مع إمكانية مراجعة الأجزاء
+                        التي تحتاج إلى مزيد من التدريب.
+                    </p>
+
+                    <p>
+                        الدراسة أونلاين مناسبة للطلاب الذين يفضلون
+                        التعلم من المنزل أو يحتاجون إلى مواعيد أكثر مرونة.
+                    </p>
+
+                    <a class="btn btn-secondary"
+                        href="https://wa.me/96560391481">
+                        احجز موعد الدرس عبر واتساب
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Exam preparation -->
+        <section>
+
+            <div class="container">
+
+                <h2>
+                    الاستعداد لاختبارات الرياضيات
+                </h2>
+
+                <p class="section-intro">
+                    قبل الاختبار يمكن ترتيب المراجعة حسب الموضوعات التي
+                    تحتاج إلى تدريب أكبر، ثم الانتقال إلى حل نماذج ومسائل
+                    متنوعة مع مراجعة الأخطاء.
+                </p>
+
+                <div class="cards">
+
+                    <div class="card">
+
+                        <h3>
+                            مراجعة القوانين
+                        </h3>
+
+                        <p>
+                            تنظيم القوانين والمفاهيم المهمة وربط كل قانون
+                            بالمسائل التي يستخدم فيها.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <h3>
+                            حل تدريبات
+                        </h3>
+
+                        <p>
+                            التدريب على أسئلة متعددة المستويات بدلًا من
+                            الاعتماد على مثال واحد فقط.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <h3>
+                            مراجعة الأخطاء
+                        </h3>
+
+                        <p>
+                            معرفة أسباب الخطأ وتصحيح طريقة التفكير حتى
+                            لا يتكرر في مسائل مشابهة.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Internal links -->
+        <section>
+
+            <div class="container">
+
+                <h2>
+                    صفحات مفيدة
+                </h2>
+
+                <p class="section-intro">
+                    يمكنك الانتقال إلى صفحات أخرى للتعرف على خدمات
+                    تدريس الرياضيات للمراحل المختلفة.
+                </p>
+
+                <div class="cards">
+
+                    <div class="card">
+
+                        <h3>
+                            المرحلة الثانوية
+                        </h3>
+
+                        <p>
+                            معلومات عن شرح الرياضيات لطلاب المرحلة الثانوية
+                            في الكويت.
+                        </p>
+
+                        <a href="https://mohktar456456-art.github.io/math-teacher/secondary.html">
+                            معرفة المزيد عن المرحلة الثانوية
+                        </a>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <h3>
+                            مدرس رياضيات في الكويت
+                        </h3>
+
+                        <p>
+                            الصفحة الرئيسية للتعرف على خدمات تدريس الرياضيات
+                            للمراحل المختلفة.
+                        </p>
+
+                        <a href="https://mohktar456456-art.github.io/math-teacher/">
+                            الانتقال إلى الصفحة الرئيسية
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FAQ -->
+        <section id="faq">
+
+            <div class="container">
+
+                <h2>
+                    أسئلة شائعة عن دروس رياضيات ثاني عشر
+                </h2>
+
+
+                <div class="faq-item">
+
+                    <h3>
+                        هل يوجد شرح رياضيات للصف الثاني عشر في الكويت؟
+                    </h3>
+
+                    <p>
+                        نعم، يمكن شرح ومراجعة موضوعات رياضيات الصف الثاني عشر
+                        مع حل المسائل والتدريب على طريقة التعامل مع الأسئلة.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <h3>
+                        هل يوجد شرح رياضيات ثاني عشر علمي؟
+                    </h3>
+
+                    <p>
+                        نعم، يمكن تخصيص الدروس لطلاب ثاني عشر علمي والتركيز
+                        على الموضوعات التي تحتاج إلى شرح أو تدريب إضافي.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <h3>
+                        هل توجد دروس رياضيات ثاني عشر أونلاين؟
+                    </h3>
+
+                    <p>
+                        نعم، يمكن تقديم دروس رياضيات الصف الثاني عشر أونلاين
+                        للطلاب داخل الكويت وخارجها.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <h3>
+                        هل يمكن مراجعة المنهج قبل الاختبار؟
+                    </h3>
+
+                    <p>
+                        نعم، يمكن تنظيم المراجعة حسب الموضوعات التي تحتاج
+                        إلى تدريب، مع حل مسائل ومراجعة الأخطاء والاستعداد للاختبار.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <h3>
+                        هل الشرح مناسب للطالب الذي يعاني من ضعف في الرياضيات؟
+                    </h3>
+
+                    <p>
+                        يمكن البدء من الأساسيات التي يحتاجها الطالب ثم
+                        الانتقال تدريجيًا إلى موضوعات المنهج والمسائل الأكثر
+                        تقدمًا.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+
+            <div class="container">
+
+                <h2>
+                    التواصل وحجز الدروس
+                </h2>
+
+                <p>
+                    إذا كنت تريد الاستفسار عن شرح رياضيات الصف الثاني عشر
+                    أو مواعيد الدروس، يمكنك التواصل مباشرة.
+                </p>
+
+                <div class="buttons">
+
+                    <a class="btn btn-primary"
+                        href="https://wa.me/96560391481">
+                        التواصل عبر واتساب
+                    </a>
+
+                    <a class="btn btn-secondary"
+                        href="tel:+96560391481">
+                        +965 6039 1481
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container">
+
+            <strong>
+                مدرس رياضيات في الكويت
+            </strong>
+
+            <p>
+                شرح ومراجعة الرياضيات للمراحل المختلفة مع إمكانية الدراسة أونلاين.
+            </p>
+
+            <div class="footer-links">
+
+                <a href="https://mohktar456456-art.github.io/math-teacher/">
+                    الرئيسية
+                </a>
+
+                <a href="https://mohktar456456-art.github.io/math-teacher/secondary.html">
+                    المرحلة الثانوية
+                </a>
+
+                <a href="https://mohktar456456-art.github.io/math-teacher/grade12.html">
+                    ثاني عشر
+                </a>
+
+                <a href="https://wa.me/96560391481">
+                    واتساب
+                </a>
+
+                <a href="tel:+96560391481">
+                    اتصال
+                </a>
+
+            </div>
+
+            <p>
+                © 2026 جميع الحقوق محفوظة
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
